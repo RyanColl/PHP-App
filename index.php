@@ -69,7 +69,9 @@
     </div>
     <div class="main-wrap">
         <main>
-
+            <?php 
+                print_names();
+            ?>
         </main>
     </div>
 </body>

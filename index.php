@@ -9,11 +9,15 @@ $commenters = [];
 
 
 
-require_once 'database/database.php';
+// require_once 'database/database.php';
 require_once 'templates/functions/template_functions.php';
 
 //connect to database: PHP Data object representing Database connection
-$pdo = db_connect();
+
+
+// $pdo = db_connect();
+
+
 // submit comment to database
 handle_form_submission();
 

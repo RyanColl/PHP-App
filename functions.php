@@ -4,9 +4,10 @@
     require_once 'db/db.php';
     $names = [];
     $pdo = db_connect();
-    getNames();
+    
 
     function print_names() {
+        getNames();
         echo "
             <h3>Here are a list of all the names of the users.</h3>
             <ul>

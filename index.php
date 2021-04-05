@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php 
-    require_once 'database/database.php';
+    require_once 'db/db.php';
 ?>
 <head>
     <meta charset="utf-8">

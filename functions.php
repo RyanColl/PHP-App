@@ -1,21 +1,16 @@
 <?php 
     ini_set('display_errors', 1);
     error_reporting(E_ALL);
-    require_once 'db/db.php';
-    $names = [];
-    $pdo = db_connect();
+    
     
 
-    function print_names() {
-        getNames();
-        echo "
-            <h3>Here are a list of all the names of the users.</h3>
-            <ul>
-            ";
-            foreach($names as $name) 
-            {
-              echo        "<li>$name</li>";
-            }
-            echo     "</ul>";
-    }
+    
+    
+    function console_log($output, $with_script_tags = true) {
+        $js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) . ');';
+        if ($with_script_tags) {
+            $js_code = '<script>' . $js_code . '</script>';
+        }
+        echo $js_code;
+}
 ?>

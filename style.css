@@ -4,7 +4,7 @@
 
 .image {
     transform: scale(0.7);
-    margin-top: -8%;
+    margin-top: 8%;
     display: flex;
     justify-content: center;
 }
@@ -31,6 +31,7 @@ ul {
     margin: -15px 0;
 }
 li {
+    z-index: 2;
     color: #666;
 }
 h3 {

@@ -21,13 +21,12 @@
 ?>
 <head>
     <meta charset="utf-8">
-    <title>Assignment 8</title>
+    <title>RyanCollicutt</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" media="screen and (max-device-width: 750px)" href="media.css">
     <script src="./jQuery.js"></script>
-    <script src="./classes-jq.js"></script>
   </head>
 <body>
     <div class="header-wrap">
@@ -39,7 +38,7 @@
             </div>
         </header>
         <nav class="navbar">
-            <a href="#" class="about"><p>ABOUT</p></a>
+            <a href="about.php" class="about"><p>ABOUT</p></a>
             <a href="#" class="projects"><p class="navpa">
                 PROJECTS
                 <div class="insert" id="p">
@@ -85,7 +84,7 @@
     </div>
     <div class="main-wrap">
         <main>
-            
+
             <?php 
                 // print_names();
             ?>

@@ -2,9 +2,7 @@ $($(document).ready(() => {
     $(".insert").fadeOut(1)
     $(".projects").hover(handlerInAbout, handlerOutAbout)
     $(".interests").hover(handlerInInterests, handlerOutInterests)
-    $(".about").on("click", () => {
-
-    })
+    
 }))
 
 const handlerInAbout = () => {

@@ -22,11 +22,7 @@ function db_connect() {
     }
 }
 
-      
-
-
-
-
+    
 
 function getUsers() {
     global $pdo;

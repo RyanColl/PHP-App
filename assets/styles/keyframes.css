@@ -1,35 +1,12 @@
-.ryan {
+.ryan, .ryan2, .ryan3, .ryan4, .ryan6, .ryan7 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid orange; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-  }
-
-  .ryan2 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret 3.5s step-end;
+      typing 2.5s steps(40, end),
+      blink-caret 2.5s step-end;
   }
   
   /* The typing effect */
@@ -51,3 +28,35 @@
     90% { border-color: transparent }
     100% { border-color: orange; }
   }
+  @keyframes blink-caret-doubled {
+    5% { border-color: transparent }
+    10% { border-color: orange; }
+    15% { border-color: transparent }
+    20% { border-color: orange; }
+    25% { border-color: transparent }
+    30% { border-color: orange; }
+    35% { border-color: transparent }
+    40% { border-color: orange; }
+    45% { border-color: transparent }
+    50% { border-color: orange; }
+    55% { border-color: transparent }
+    60% { border-color: orange; }
+    65% { border-color: transparent }
+    70% { border-color: orange; }
+    75% { border-color: transparent }
+    80% { border-color: orange; }
+    85% { border-color: transparent }
+    90% { border-color: orange; }
+    95% { border-color: transparent }
+    100% { border-color: orange; }
+  }
+.ryan5, .ryan8, .ryan9 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid transparent; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 0.5s steps(40, end),
+}
+  

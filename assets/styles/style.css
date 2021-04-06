@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
-
+a {
+  text-decoration: none;
+}
 .header-wrap {
   display: flex;
   flex-direction: column;
@@ -54,8 +56,9 @@ h3 {
     color: #ABB2BF;
 }
 .code-block {
+  margin-top: 10%;
   width: 700px;
-  height: 800px;
+  height: auto;
   border-radius: 5px;
   background: #24262A;
   padding: 50px 0;
@@ -82,4 +85,34 @@ h3 {
 .y {
   color: #B49438;
 }
-
+.r {
+  color: #A26447;
+}
+.u {
+  color: #98BE5E;
+}
+.photo-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.photo {
+  width: 650px;
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+}
+.left-arrow {
+  grid-column: 1/2;
+}
+.main-img {
+  grid-column: 1/4;
+}
+.right-arrow {
+  grid-column: 3/4;
+}
+.main-img > img {
+  object-fit: cover;
+  text-align: center;
+  width: 100%;
+}

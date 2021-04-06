@@ -76,13 +76,15 @@
         </nav>
         <div class="code-block">
             <div id="headers-low">
-                <div><h3 class="ryan"><b class="i">function</b> <b class="y">hi_Im_Ryan</b>() {</h3></div>
-                <div><h3 id="h3"><b class="b">var</b> <b class="p">fullStack</b> = ["Ryan Collicutt"];</h3></div>
-                <div><h3 id="h3"><b class="i">while</b>(<b class="p">fullStack</b>) { </h3></div>
-                <div><h3 id="h3">var fullStack = ["Ryan Collicutt"]</h3></div>
-                <div><h3 id="h3">var fullStack = ["Ryan Collicutt"]</h3></div>
-                <div><h3 id="h3">var fullStack = ["Ryan Collicutt"]</h3></div>
-                <div><h3 id="h3">var fullStack = ["Ryan Collicutt"]</h3></div>
+                <div><h3 id="h3-1" class="ryan"><code><b class="i">function</b> <b class="y">hi_Im_Ryan</b>() {</code></h3></div>
+                <div><h3 id="h3-2"><code>&nbsp<b class="b">var</b> <b class="p">available</b> = ["<b class="r">Me</b>"];</code></h3></div>
+                <div><h3 id="h3-3"><code>&nbsp<b class="i">while</b>(<b class="p">available</b>) { </code></h3></div>
+                <div><h3 id="h3-4"><code>&nbsp&nbsp&nbsp<b class="p">available</b>.<b class="y">push</b>("<b class="r">toFindAJob</b>");</code></h3></div>
+                <div><h3 id="h3-5"><code>&nbsp}</code></h3></div>
+                <div><h3 id="h3-6"><code>&nbsp<b class="i">if</b>(<b class="p">you</b>.<b class="y">hiring</b>() == <b class="b">true</b>) {</code></h3></div>
+                <div><h3 id="h3-7"><code>&nbsp&nbsp&nbsp<b class="p">console</b>.<b class="y">log</b>(<a href="contact.php"><b class="u">contactMe</b></a>);</code></h3></div>
+                <div><h3 id="h3-8"><code>&nbsp}</code></h3></div>
+                <div><h3 id="h3-9"><code>}</code></h3></div>
             </div>
         </div>
         
@@ -91,7 +93,16 @@
     <div class="main-wrap">
         <main>
             <div class="photo-wrap">
+                    <div class="photo">
+                        <div class="left-arrow"></div>
+                        <div class="main-img">
+                            <img src="./assets/my-pics/20.png">
+                        </div>
+                        <div class="right-arrow"></div>
+                    </div>
+                    <div class="photos">
 
+                    </div>
             </div>
             <?php 
                 // print_names();

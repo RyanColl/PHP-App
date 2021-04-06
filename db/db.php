@@ -8,8 +8,6 @@ define('DBPASS', '5669a6f6');
 function db_connect() {
 
     try {
-      // TODO
-      // try to open database connection using constants set in config.php
       // return $pdo;
       $connectionString = 'mysql:host=' . DBHOST . ';dbname=' . DBNAME;
       $user = DBUSER;
@@ -24,6 +22,10 @@ function db_connect() {
     }
 }
 
+      
+
+
+
 
 
 function getNames() {
@@ -35,4 +37,5 @@ function getNames() {
         array_push($names, $row);  
     }
 }
+
  ?>

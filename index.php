@@ -2,11 +2,11 @@
 <html lang="en">
 <?php 
     require_once 'db/db.php';
+    require_once 'functions.php';
     $names = [];
     $pdo = db_connect();
-    global $sql;
+    getNames();
     function print_names() {
-        getNames();
         echo "
             <h3>Here are a list of all the names of the users.</h3>
             <ul>
@@ -17,7 +17,6 @@
             }
             echo     "</ul>";
     }
-    require_once 'functions.php';
 ?>
 <head>
     <meta charset="utf-8">
@@ -86,8 +85,8 @@
     <div class="main-wrap">
         <main>
             <?php 
-            console_log($sql);
-                // print_names();
+            
+                print_names();
             ?>
         </main>
     </div>

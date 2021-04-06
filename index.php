@@ -4,6 +4,7 @@
     require_once 'db/db.php';
     $names = [];
     $pdo = db_connect();
+    global $sql;
     function print_names() {
         getNames();
         echo "

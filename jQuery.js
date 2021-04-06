@@ -2,7 +2,12 @@ $($(document).ready(() => {
     fadeOut();
     $(".projects").hover(handlerInAbout, handlerOutAbout)
     $(".interests").hover(handlerInInterests, handlerOutInterests)
+    codeBlock();
     scroll();
+    $("#pho a").on("click", (e) => {
+        e.preventDefault();
+        
+    })
     
     
 }))
@@ -89,7 +94,7 @@ const scroll = () => {
         var top = $(window).scrollTop();
         console.log(top);
         if (top > 400) {
-            codeBlock();
+            
         }
     })
 }
@@ -103,4 +108,9 @@ const fadeOut = () => {
     $("#h3-7").fadeOut(1)
     $("#h3-8").fadeOut(1)
     $("#h3-9").fadeOut(1)
+    $(".photo1").css("opacity", "0.5")
+    $(".photo2").css("opacity", "0.5")
+    $(".photo3").css("opacity", "0.5")
+    $(".photo4").css("opacity", "0.5")
+    $(".photo5").css("opacity", "0.5")
 }

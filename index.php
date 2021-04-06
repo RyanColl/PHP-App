@@ -72,21 +72,9 @@
                     </div>
                 </div>
             </p></a>
-            <a href="#" class="contact"><p>CONTACT</p></a>
+            <a href="contact.php" class="contact"><p>CONTACT</p></a>
         </nav>
-        <div class="code-block">
-            <div id="headers-low">
-                <div><h3 id="h3-1" class="ryan"><code><b class="i">function</b> <b class="y">hi_Im_Ryan</b>() {</code></h3></div>
-                <div><h3 id="h3-2"><code>&nbsp<b class="b">var</b> <b class="p">available</b> = ["<b class="r">Me</b>"];</code></h3></div>
-                <div><h3 id="h3-3"><code>&nbsp<b class="i">while</b>(<b class="p">available</b>) { </code></h3></div>
-                <div><h3 id="h3-4"><code>&nbsp&nbsp&nbsp<b class="p">available</b>.<b class="y">push</b>("<b class="r">toFindAJob</b>");</code></h3></div>
-                <div><h3 id="h3-5"><code>&nbsp}</code></h3></div>
-                <div><h3 id="h3-6"><code>&nbsp<b class="i">if</b>(<b class="p">you</b>.<b class="y">hiring</b>() == <b class="b">true</b>) {</code></h3></div>
-                <div><h3 id="h3-7"><code>&nbsp&nbsp&nbsp<b class="p">console</b>.<b class="y">log</b>(<a href="contact.php"><b class="u">contactMe</b></a>);</code></h3></div>
-                <div><h3 id="h3-8"><code>&nbsp}</code></h3></div>
-                <div><h3 id="h3-9"><code>}</code></h3></div>
-            </div>
-        </div>
+        
         
         
     </div>
@@ -98,10 +86,26 @@
                         <div class="main-img">
                             <img src="./assets/my-pics/20.png">
                         </div>
-                        <div class="right-arrow"></div>
+                        <div class="right-arrow">
+                            <div class="arrow-boxr"></div>
+                        </div>
                     </div>
                     <div class="photos">
-
+                        <div id="pho" class="photo1">
+                            <a href="#"><img src="./assets/my-pics/20.png"></a>
+                        </div>
+                        <div id="pho" class="photo2">
+                            <a href="#"><img src="./assets/my-pics/21.png"></a>
+                        </div>
+                        <div id="pho" class="photo3">
+                            <a href="#"><img src="./assets/my-pics/22.png"></a>
+                        </div>
+                        <div id="pho" class="photo4">
+                            <a href="#"><img src="./assets/my-pics/23.png"></a>
+                        </div>
+                        <div id="pho" class="photo5">
+                            <a href="#"><img src="./assets/my-pics/24.png"></a>
+                        </div>
                     </div>
             </div>
             <?php 

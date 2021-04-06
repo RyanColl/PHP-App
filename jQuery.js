@@ -2,7 +2,11 @@ $($(document).ready(() => {
     $(".insert").fadeOut(1)
     $(".projects").hover(handlerInAbout, handlerOutAbout)
     $(".interests").hover(handlerInInterests, handlerOutInterests)
-    setTimeout(() => { $("#h3").addClass("ryan2") }, 3000);
+    $("#h3").fadeOut(1)
+    setTimeout(() => { 
+        $("#h3").fadeIn(1) 
+        $("#h3").addClass("ryan2")
+    }, 3000);
     
 }))
 
@@ -37,5 +41,5 @@ const returnCSS = (p) => {
     p.css("color", "#666")
 }
 const images = () => {
-    
+
 }

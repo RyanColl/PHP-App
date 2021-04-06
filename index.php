@@ -74,13 +74,19 @@
             </p></a>
             <a href="#" class="contact"><p>CONTACT</p></a>
         </nav>
-        <h3 class="ryan">Hi, I’m Ryan!</h3>
-        <h3 id="h3">I like making apps and meeting new people.</h3>
+        <div class="code-block">
+            <div id="headers-low">
+                <div><h3 class="ryan">Hi, I’m Ryan!</h3></div>
+                <div><h3 id="h3">I like making apps and meeting new people.</h3></div>
+            </div>
+        </div>
+        
+        
     </div>
     <div class="main-wrap">
         <main>
             <div class="photo-wrap">
-                
+
             </div>
             <?php 
                 // print_names();

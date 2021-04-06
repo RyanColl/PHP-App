@@ -36,3 +36,6 @@ const setCSS = (p) => {
 const returnCSS = (p) => {
     p.css("color", "#666")
 }
+const images = () => {
+    
+}

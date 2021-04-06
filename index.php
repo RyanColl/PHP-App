@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php 
+    require_once 'db/db.php';
+    $names = [];
+    $pdo = db_connect();
+    function print_names() {
+        getNames();
+        echo "
+            <h3>Here are a list of all the names of the users.</h3>
+            <ul>
+            ";
+            foreach($names as $name) 
+            {
+              echo        "<li>$name</li>";
+            }
+            echo     "</ul>";
+    }
     require_once 'functions.php';
 ?>
 <head>
@@ -70,7 +85,8 @@
     <div class="main-wrap">
         <main>
             <?php 
-                print_names();
+            console_log($sql);
+                // print_names();
             ?>
         </main>
     </div>

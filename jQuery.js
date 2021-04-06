@@ -3,12 +3,11 @@ $($(document).ready(() => {
     $(".projects").hover(handlerInAbout, handlerOutAbout)
     $(".interests").hover(handlerInInterests, handlerOutInterests)
     $("#h3").fadeOut(1)
-    setTimeout(() => { 
-        $("#h3").fadeIn(1) 
-        $("#h3").addClass("ryan2")
-    }, 3000);
+    codeBlock();
+    
     
 }))
+
 
 const handlerInAbout = () => {
     let p = $(".navpa")
@@ -42,4 +41,10 @@ const returnCSS = (p) => {
 }
 const images = () => {
 
+}
+const codeBlock = () => {
+    setTimeout(() => { 
+        $("#h3").fadeIn(1) 
+        $("#h3").addClass("ryan2")
+    }, 3000);
 }

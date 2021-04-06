@@ -7,6 +7,7 @@
     $pdo = db_connect();
     getNames();
     function print_names() {
+        global $names;
         echo "
             <h3>Here are a list of all the names of the users.</h3>
             <ul>

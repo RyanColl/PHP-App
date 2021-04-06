@@ -84,7 +84,7 @@
                     <div class="photo">
                         <div class="left-arrow"></div>
                         <div class="main-img">
-                            <img src="./assets/my-pics/20.png">
+                            <img class="big-img" src="./assets/my-pics/20.png">
                         </div>
                         <div class="right-arrow">
                             <div class="arrow-boxr"></div>
@@ -92,19 +92,19 @@
                     </div>
                     <div class="photos">
                         <div id="pho" class="photo1">
-                            <a href="#"><img src="./assets/my-pics/20.png"></a>
+                            <a href="#"><img class="img1" src="./assets/my-pics/20.png"></a>
                         </div>
                         <div id="pho" class="photo2">
-                            <a href="#"><img src="./assets/my-pics/21.png"></a>
+                            <a href="#"><img class="img2" src="./assets/my-pics/21.png"></a>
                         </div>
                         <div id="pho" class="photo3">
-                            <a href="#"><img src="./assets/my-pics/22.png"></a>
+                            <a href="#"><img class="img3" src="./assets/my-pics/22.png"></a>
                         </div>
                         <div id="pho" class="photo4">
-                            <a href="#"><img src="./assets/my-pics/23.png"></a>
+                            <a href="#"><img class="img4" src="./assets/my-pics/23.png"></a>
                         </div>
                         <div id="pho" class="photo5">
-                            <a href="#"><img src="./assets/my-pics/24.png"></a>
+                            <a href="#"><img class="img5" src="./assets/my-pics/24.png"></a>
                         </div>
                     </div>
             </div>

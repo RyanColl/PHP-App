@@ -4,10 +4,8 @@ $($(document).ready(() => {
     $(".interests").hover(handlerInInterests, handlerOutInterests)
     codeBlock();
     scroll();
-    $("#pho a").on("click", (e) => {
-        e.preventDefault();
-        
-    })
+    onPhotoClick();
+    
     
     
 }))
@@ -113,4 +111,75 @@ const fadeOut = () => {
     $(".photo3").css("opacity", "0.5")
     $(".photo4").css("opacity", "0.5")
     $(".photo5").css("opacity", "0.5")
+}
+const onPhotoClick = () => {
+    $("#pho a").on("click", (e) => {
+        e.preventDefault();
+    })
+    $(".photo1").on("click", () => {
+        if ($(".photo1").css("opacity") != 1) {
+            $(".photo2").css("opacity", "0.5")
+            $(".photo3").css("opacity", "0.5")
+            $(".photo4").css("opacity", "0.5")
+            $(".photo5").css("opacity", "0.5")
+            $(".photo1").css("opacity", "1")
+        }
+        $(".big-img").fadeOut(250, () => {
+            $(".big-img").attr("src", $(".img1").attr("src"))
+            $(".big-img").fadeIn(250)
+        })
+        
+    })
+    $(".photo2").on("click", () => {
+        if ($(".photo2").css("opacity") != 1) {
+            $(".photo1").css("opacity", "0.5")
+            $(".photo3").css("opacity", "0.5")
+            $(".photo4").css("opacity", "0.5")
+            $(".photo5").css("opacity", "0.5")
+            $(".photo2").css("opacity", "1")
+        }
+        $(".big-img").fadeOut(250, () => {
+            $(".big-img").attr("src", $(".img2").attr("src"))
+            $(".big-img").fadeIn(250)
+        })
+    })
+    $(".photo3").on("click", () => {
+        if ($(".photo3").css("opacity") != 1) {
+            $(".photo2").css("opacity", "0.5")
+            $(".photo1").css("opacity", "0.5")
+            $(".photo4").css("opacity", "0.5")
+            $(".photo5").css("opacity", "0.5")
+            $(".photo3").css("opacity", "1")
+        }
+        $(".big-img").fadeOut(250, () => {
+            $(".big-img").attr("src", $(".img3").attr("src"))
+            $(".big-img").fadeIn(250)
+        })
+    })
+    $(".photo4").on("click", () => {
+        if ($(".photo4").css("opacity") != 1) {
+            $(".photo2").css("opacity", "0.5")
+            $(".photo3").css("opacity", "0.5")
+            $(".photo1").css("opacity", "0.5")
+            $(".photo5").css("opacity", "0.5")
+            $(".photo4").css("opacity", "1")
+        }
+        $(".big-img").fadeOut(250, () => {
+            $(".big-img").attr("src", $(".img4").attr("src"))
+            $(".big-img").fadeIn(250)
+        })
+    })
+    $(".photo5").on("click", () => {
+        if ($(".photo5").css("opacity") != 1) {
+            $(".photo2").css("opacity", "0.5")
+            $(".photo3").css("opacity", "0.5")
+            $(".photo4").css("opacity", "0.5")
+            $(".photo1").css("opacity", "0.5")
+            $(".photo5").css("opacity", "1")
+        }
+        $(".big-img").fadeOut(250, () => {
+            $(".big-img").attr("src", $(".img5").attr("src"))
+            $(".big-img").fadeIn(250)
+        })
+    })
 }

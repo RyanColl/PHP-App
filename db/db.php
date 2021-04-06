@@ -29,12 +29,10 @@ function db_connect() {
 function getNames() {
     global $pdo;
     global $names;
-    if($pdo) {
-        $sql = "SELECT first_name FROM users ORDER BY first_name";
-        $result = $pdo->query($sql);
-        while ($row = $result->fetch()) {
-                array_push($names, $row);  
-        }
+    $sql = "SELECT first_name FROM users ORDER BY first_name";
+    $result = $pdo->query($sql);
+    while ($row = $result->fetch()) {
+        array_push($names, $row);  
     }
 }
  ?>

@@ -2,6 +2,7 @@ $($(document).ready(() => {
     $(".insert").fadeOut(1)
     $(".projects").hover(handlerInAbout, handlerOutAbout)
     $(".interests").hover(handlerInInterests, handlerOutInterests)
+    setTimeout(() => { $("#h3").addClass("ryan2") }, 3000);
     
 }))
 

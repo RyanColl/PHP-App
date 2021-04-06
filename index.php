@@ -79,8 +79,8 @@
             </p></a>
             <a href="#" class="contact"><p>CONTACT</p></a>
         </nav>
-        <h3>Hi, I’m Ryan!</h3>
-        <h3>I like making apps and meeting new people.</h3>
+        <h3 class="ryan">Hi, I’m Ryan!</h3>
+        <h3 id="h3">I like making apps and meeting new people.</h3>
     </div>
     <div class="main-wrap">
         <main>

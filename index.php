@@ -13,13 +13,14 @@
     <title>RyanCollicutt</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" media="screen and (max-device-width: 750px)" href="media.css"> -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- <link rel="stylesheet" media="screen and (max-device-width: 750px)" href="style/media.css"> -->
     <script src="./jQuery.js"></script>
   </head>
 <body>
     <div class="header-wrap">
         <header>
+            <h1><i>Ryan Collicutt,<h2>Full Stack Web Developer</i></h2></h1>
             <div class="image">
                 <a href="#" class="img">
                     <img src="./assets/comp3.gif">
@@ -75,7 +76,7 @@
         <main>
 
             <?php 
-                print_names();
+                // print_names();
             ?>
         </main>
     </div>

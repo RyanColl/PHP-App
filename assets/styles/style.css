@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+
+.image {
+    transform: scale(0.7);
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+}
+.img {
+    display: flex;
+    justify-content: center;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+.navbar a {
+    margin: 0 3.5%;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+.navbar a p {
+    color: #666;
+}
+ul {
+    position: absolute;
+    z-index: 1;
+    list-style-type: none;
+    margin: -15px 0;
+}
+li {
+    z-index: 2;
+    color: #666;
+}
+h3 {
+    margin: 10% 5%;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 2.0rem;
+}
+.interesthover {
+    
+}
+h1, h2 {
+  font-family: 'New Tegomin', serif;
+}
+

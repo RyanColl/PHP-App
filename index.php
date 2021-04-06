@@ -6,18 +6,7 @@
     $users = [];
     $pdo = db_connect();
     getUsers();
-    function print_names() {
-        global $users;
-        echo "
-            <h3>Here are a list of all the names of the users.</h3>
-            <ul>
-            ";
-            foreach($users as $user) 
-            {
-              echo        "<li>$user[first_name]</li>";
-            }
-            echo     "</ul>";
-    }
+    
 ?>
 <head>
     <meta charset="utf-8">
@@ -86,7 +75,7 @@
         <main>
 
             <?php 
-                // print_names();
+                print_names();
             ?>
         </main>
     </div>

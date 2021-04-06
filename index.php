@@ -3,18 +3,18 @@
 <?php 
     require_once 'db/db.php';
     require_once 'functions.php';
-    $names = [];
+    $users = [];
     $pdo = db_connect();
-    getNames();
+    getUsers();
     function print_names() {
-        global $names;
+        global $users;
         echo "
             <h3>Here are a list of all the names of the users.</h3>
             <ul>
             ";
-            foreach($names as $name) 
+            foreach($users as $user) 
             {
-              echo        "<li>$name</li>";
+              echo        "<li>$user[first_name]</li>";
             }
             echo     "</ul>";
     }

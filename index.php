@@ -76,8 +76,13 @@
         </nav>
         <div class="code-block">
             <div id="headers-low">
-                <div><h3 class="ryan">Hi, I’m Ryan!</h3></div>
-                <div><h3 id="h3">I like making apps and meeting new people.</h3></div>
+                <div><h3 class="ryan"><b class="i">function</b> <b class="y">hi_Im_Ryan</b>() {</h3></div>
+                <div><h3 id="h3"><b class="b">var</b> <b class="p">fullStack</b> = ["Ryan Collicutt"];</h3></div>
+                <div><h3 id="h3"><b class="i">while</b>(<b class="p">fullStack</b>) { </h3></div>
+                <div><h3 id="h3">var fullStack = ["Ryan Collicutt"]</h3></div>
+                <div><h3 id="h3">var fullStack = ["Ryan Collicutt"]</h3></div>
+                <div><h3 id="h3">var fullStack = ["Ryan Collicutt"]</h3></div>
+                <div><h3 id="h3">var fullStack = ["Ryan Collicutt"]</h3></div>
             </div>
         </div>
         

@@ -6,7 +6,7 @@
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
       typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
+      blink-caret .75s step-end;
   }
   
   /* The typing effect */
@@ -29,7 +29,7 @@
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
       typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
+      blink-caret 3.5s step-end;
   }
   
   /* The typing effect */
@@ -40,6 +40,14 @@
   
   /* The typewriter cursor effect */
   @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
+    10% { border-color: transparent }
+    20% { border-color: orange; }
+    30% { border-color: transparent }
+    40% { border-color: orange; }
+    50% { border-color: transparent }
+    60% { border-color: orange; }
+    70% { border-color: transparent }
+    80% { border-color: orange; }
+    90% { border-color: transparent }
+    100% { border-color: orange; }
   }

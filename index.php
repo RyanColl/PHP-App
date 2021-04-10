@@ -37,57 +37,42 @@
             <a href="#" class="projects"><p class="navpa">
                 PROJECTS
                 <div class="insert" id="p">
-                    <div class="abouthover">
+                    <div class="projects-hover">
                         <ul>
-                            <li>
-                                one
-                            </li>
-                            <li>
-                                two
-                            </li>
-                            <li>
-                                three
-                            </li>
+                            <a href="#"><li>
+                                GitHub
+                            </li></a>
+                            <a href="#"><li>
+                                LinkedIn
+                            </li></a>
                         </ul>
                     </div>
                 </div>
             </p></a>
-            
-            <a href="#" class="goals"><p>GOALS</p></a>
-            <a href="#" class="interests"><p class="navpi">
-                INTERESTS
-                <div class="insert" id="i">
-                    <div class="interestshover">
-                        <ul>
-                            <li>
-                                one
-                            </li>
-                            <li>
-                                two
-                            </li>
-                            <li>
-                                three
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </p></a>
+            <a href="#" class="interests"><p class="navpi">INTERESTS</p></a>
             <a href="contact.php" class="contact"><p>CONTACT</p></a>
         </nav>
-        
-        
-        
     </div>
     <div class="main-wrap">
         <main>
             <div class="photo-wrap">
                     <div class="photo">
-                        <div class="left-arrow"></div>
+                        <div class="left-arrow">
+                            <a id="a-left" href="#">
+                                <div class="arrow-boxl">                               
+                                    <div class="arrowl"></div>
+                                </div>
+                            </a>    
+                        </div>
                         <div class="main-img">
                             <img class="big-img" src="./assets/my-pics/20.png">
                         </div>
                         <div class="right-arrow">
-                            <div class="arrow-boxr"></div>
+                            <a id="a-right" href="#">
+                                <div class="arrow-boxr">                               
+                                    <div class="arrowr"></div>
+                                </div>
+                            </a>                          
                         </div>
                     </div>
                     <div class="photos">

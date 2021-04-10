@@ -1,13 +1,13 @@
 $($(document).ready(() => {
     fadeOut();
     $(".projects").hover(handlerInAbout, handlerOutAbout)
-    $(".interests").hover(handlerInInterests, handlerOutInterests)
+    // $(".interests").hover(handlerInInterests, handlerOutInterests)
     codeBlock();
     scroll();
     onPhotoClick();
-    
-    
-    
+    leftArrowClick();
+    rightArrowClick();
+    imageClick();
 }))
 
 
@@ -23,27 +23,24 @@ const handlerOutAbout = () => {
     $("#p").fadeOut(150)
     // $(".abouthover").remove()
 }
-const handlerInInterests = () => {
-    let p = $(".navpi")
-    setCSS(p)
-    $("#i").fadeIn(1)
-    // $("#i").load("./stuff/interestshover.html")
-}
+// const handlerInInterests = () => {
+//     let p = $(".navpi")
+//     setCSS(p)
+//     $("#i").fadeIn(1)
+//     // $("#i").load("./stuff/interestshover.html")
+// }
 
-const handlerOutInterests = () => {
-    let p = $(".navpi")
-    returnCSS(p)
-    $("#i").fadeOut(150)
-    // $(".interestshover").remove()
-}
+// const handlerOutInterests = () => {
+//     let p = $(".navpi")
+//     returnCSS(p)
+//     $("#i").fadeOut(150)
+//     // $(".interestshover").remove()
+// }
 const setCSS = (p) => {
     p.css("color", "rgb(153, 153, 153)")
 }
 const returnCSS = (p) => {
     p.css("color", "#666")
-}
-const images = () => {
-    console.log()
 }
 const codeBlock = () => {
     setTimeout(() => { 
@@ -79,21 +76,19 @@ const codeBlock = () => {
                                     $("#h3-9").addClass("ryan9")
                                     $(".ryan8").css("border-right", ".15em solid transparent")
                                 }, 1000)
-                            }, 2600)
-                        }, 2600)
+                            }, 1500)
+                        }, 1500)
                     }, 1000)
-                }, 2600)
-            }, 2600)
-        }, 2600)
-    }, 2600);
+                }, 1500)
+            }, 1500)
+        }, 1500)
+    }, 1500);
 }
 const scroll = () => {
     $(window).on("scroll", () => {
         var top = $(window).scrollTop();
         console.log(top);
-        if (top > 400) {
-            
-        }
+        
     })
 }
 const fadeOut = () => {
@@ -106,7 +101,6 @@ const fadeOut = () => {
     $("#h3-7").fadeOut(1)
     $("#h3-8").fadeOut(1)
     $("#h3-9").fadeOut(1)
-    $(".photo1").css("opacity", "0.5")
     $(".photo2").css("opacity", "0.5")
     $(".photo3").css("opacity", "0.5")
     $(".photo4").css("opacity", "0.5")
@@ -117,69 +111,141 @@ const onPhotoClick = () => {
         e.preventDefault();
     })
     $(".photo1").on("click", () => {
-        if ($(".photo1").css("opacity") != 1) {
-            $(".photo2").css("opacity", "0.5")
-            $(".photo3").css("opacity", "0.5")
-            $(".photo4").css("opacity", "0.5")
-            $(".photo5").css("opacity", "0.5")
-            $(".photo1").css("opacity", "1")
-        }
+        setSmallImg1();
         $(".big-img").fadeOut(250, () => {
             $(".big-img").attr("src", $(".img1").attr("src"))
+            pictureHold($(".big-img").attr("src"))
             $(".big-img").fadeIn(250)
         })
         
     })
     $(".photo2").on("click", () => {
-        if ($(".photo2").css("opacity") != 1) {
-            $(".photo1").css("opacity", "0.5")
-            $(".photo3").css("opacity", "0.5")
-            $(".photo4").css("opacity", "0.5")
-            $(".photo5").css("opacity", "0.5")
-            $(".photo2").css("opacity", "1")
-        }
+        setSmallImg2();
         $(".big-img").fadeOut(250, () => {
             $(".big-img").attr("src", $(".img2").attr("src"))
+            pictureHold($(".big-img").attr("src"))
             $(".big-img").fadeIn(250)
         })
     })
     $(".photo3").on("click", () => {
-        if ($(".photo3").css("opacity") != 1) {
-            $(".photo2").css("opacity", "0.5")
-            $(".photo1").css("opacity", "0.5")
-            $(".photo4").css("opacity", "0.5")
-            $(".photo5").css("opacity", "0.5")
-            $(".photo3").css("opacity", "1")
-        }
+        setSmallImg3();
         $(".big-img").fadeOut(250, () => {
             $(".big-img").attr("src", $(".img3").attr("src"))
+            pictureHold($(".big-img").attr("src"))
             $(".big-img").fadeIn(250)
         })
     })
     $(".photo4").on("click", () => {
-        if ($(".photo4").css("opacity") != 1) {
-            $(".photo2").css("opacity", "0.5")
-            $(".photo3").css("opacity", "0.5")
-            $(".photo1").css("opacity", "0.5")
-            $(".photo5").css("opacity", "0.5")
-            $(".photo4").css("opacity", "1")
-        }
+        setSmallImg4();
         $(".big-img").fadeOut(250, () => {
             $(".big-img").attr("src", $(".img4").attr("src"))
+            pictureHold($(".big-img").attr("src"))
             $(".big-img").fadeIn(250)
         })
     })
     $(".photo5").on("click", () => {
-        if ($(".photo5").css("opacity") != 1) {
-            $(".photo2").css("opacity", "0.5")
-            $(".photo3").css("opacity", "0.5")
-            $(".photo4").css("opacity", "0.5")
-            $(".photo1").css("opacity", "0.5")
-            $(".photo5").css("opacity", "1")
-        }
+        setSmallImg5();
         $(".big-img").fadeOut(250, () => {
             $(".big-img").attr("src", $(".img5").attr("src"))
+            pictureHold($(".big-img").attr("src"))
             $(".big-img").fadeIn(250)
         })
+    })
+}
+
+const setSmallImg1 = () => {
+    if ($(".photo1").css("opacity") != 1) {
+        $(".photo2").css("opacity", "0.5")
+        $(".photo3").css("opacity", "0.5")
+        $(".photo4").css("opacity", "0.5")
+        $(".photo5").css("opacity", "0.5")
+        $(".photo1").css("opacity", "1")
+    }
+}
+const setSmallImg2 = () => {
+    if ($(".photo2").css("opacity") != 1) {
+        $(".photo1").css("opacity", "0.5")
+        $(".photo3").css("opacity", "0.5")
+        $(".photo4").css("opacity", "0.5")
+        $(".photo5").css("opacity", "0.5")
+        $(".photo2").css("opacity", "1")
+    }
+}
+const setSmallImg3 = () => {
+    if ($(".photo3").css("opacity") != 1) {
+        $(".photo2").css("opacity", "0.5")
+        $(".photo1").css("opacity", "0.5")
+        $(".photo4").css("opacity", "0.5")
+        $(".photo5").css("opacity", "0.5")
+        $(".photo3").css("opacity", "1")
+    }
+}
+const setSmallImg4 = () => {
+    if ($(".photo4").css("opacity") != 1) {
+        $(".photo2").css("opacity", "0.5")
+        $(".photo3").css("opacity", "0.5")
+        $(".photo1").css("opacity", "0.5")
+        $(".photo5").css("opacity", "0.5")
+        $(".photo4").css("opacity", "1")
+    }
+}
+const setSmallImg5 = () => {
+    if ($(".photo5").css("opacity") != 1) {
+        $(".photo2").css("opacity", "0.5")
+        $(".photo3").css("opacity", "0.5")
+        $(".photo4").css("opacity", "0.5")
+        $(".photo1").css("opacity", "0.5")
+        $(".photo5").css("opacity", "1")
+    }
+}
+const pic1 = "./assets/my-pics/20.png";
+const pic2 = "./assets/my-pics/21.png";
+const pic3 = "./assets/my-pics/22.png";
+const pic4 = "./assets/my-pics/23.png";
+const pic5 = "./assets/my-pics/24.png";
+var pictureSrc = pic1;
+const pictureHold = (picture) => {
+    pictureSrc = picture;
+}
+const setBigImg = (pic) => {
+    $(".big-img").fadeOut(250, () => {
+        $(".big-img").attr("src", pic)
+        pictureHold($(".big-img").attr("src"))
+        $(".big-img").fadeIn(250)
+    })
+}
+const leftArrowClick = () => {
+    $("#a-left").on("click", (e) => {
+        e.preventDefault();
+        switch (pictureSrc) {
+            case pic1: setBigImg(pic5); setSmallImg5(); break;
+            case pic2: setBigImg(pic1); setSmallImg1(); break;
+            case pic3: setBigImg(pic2); setSmallImg2(); break;
+            case pic4: setBigImg(pic3); setSmallImg3(); break;
+            case pic5: setBigImg(pic4); setSmallImg4(); break;     
+        }
+    })
+}
+const imageClick = () => {
+    $(".big-img").on("click", () => {
+        switch (pictureSrc) {
+            case pic1: setBigImg(pic2); setSmallImg2(); break;
+            case pic2: setBigImg(pic3); setSmallImg3(); break;
+            case pic3: setBigImg(pic4); setSmallImg4(); break;
+            case pic4: setBigImg(pic5); setSmallImg5(); break;
+            case pic5: setBigImg(pic1); setSmallImg1(); break;     
+        }
+    })
+}
+const rightArrowClick = () => {
+    $("#a-right").on("click", (e) => {
+        e.preventDefault();
+        switch (pictureSrc) {
+            case pic1: setBigImg(pic2); setSmallImg2(); break;
+            case pic2: setBigImg(pic3); setSmallImg3(); break;
+            case pic3: setBigImg(pic4); setSmallImg4(); break;
+            case pic4: setBigImg(pic5); setSmallImg5(); break;
+            case pic5: setBigImg(pic1); setSmallImg1(); break;     
+        }
     })
 }

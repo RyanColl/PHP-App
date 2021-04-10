@@ -5,8 +5,8 @@
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
-      typing 2.5s steps(40, end),
-      blink-caret 2.5s step-end;
+      typing 1.5s steps(40, end),
+      blink-caret-slow 1.5s step-end;
   }
   
   /* The typing effect */
@@ -14,20 +14,16 @@
     from { width: 0 }
     to { width: 100% }
   }
+  @keyframes blink-caret-slow {
+    25% { border-color: transparent }
+    50% { border-color: orange; }
+    75% { border-color: transparent }
+    100% { border-color: orange; }
+    
+  }
   
   /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    10% { border-color: transparent }
-    20% { border-color: orange; }
-    30% { border-color: transparent }
-    40% { border-color: orange; }
-    50% { border-color: transparent }
-    60% { border-color: orange; }
-    70% { border-color: transparent }
-    80% { border-color: orange; }
-    90% { border-color: transparent }
-    100% { border-color: orange; }
-  }
+  
   @keyframes blink-caret-doubled {
     5% { border-color: transparent }
     10% { border-color: orange; }

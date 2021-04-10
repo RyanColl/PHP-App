@@ -21,5 +21,5 @@
             $js_code = '<script>' . $js_code . '</script>';
         }
         echo $js_code;
-}
+    }
 ?>

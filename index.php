@@ -4,9 +4,11 @@
     require_once 'db/db.php';
     require_once 'functions.php';
     $users = [];
+    $license = [];
+    $name = '';
     $pdo = db_connect();
-    getUsers();
-    
+    getLicenseData();
+    handleContactForm();  
 ?>
 <head>
     <meta charset="utf-8">
@@ -14,7 +16,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="./assets/styles/style.css">
-    <link rel="stylesheet" href="./assets/styles/keyframes.css">
     <!-- <link rel="stylesheet" media="screen and (max-device-width: 750px)" href="/assets/style/media.css"> -->
     <script src="./jQuery.js"></script>
   </head>
@@ -33,7 +34,7 @@
             </div>
         </header>
         <nav class="navbar">
-            <a href="about.php" class="about"><p>ABOUT</p></a>
+            <a href="about.php" class="about"><p class="nava">ABOUT</p></a>
             <a href="#" class="projects"><p class="navpa">
                 PROJECTS
                 <div class="insert" id="p">
@@ -42,6 +43,7 @@
                             <a href="#"><li>
                                 GitHub
                             </li></a>
+                            <li><b class="lines">&nbsp||&nbsp</b></li>
                             <a href="#"><li>
                                 LinkedIn
                             </li></a>
@@ -49,10 +51,12 @@
                     </div>
                 </div>
             </p></a>
-            <a href="#" class="interests"><p class="navpi">INTERESTS</p></a>
-            <a href="contact.php" class="contact"><p>CONTACT</p></a>
+            <a href="interests.php" class="interests"><p class="navpi">INTERESTS</p></a>
+            <a href="contact.php" class="contact"><p class="navc">CONTACT</p></a>
         </nav>
     </div>
+    <h1 class="me" id="hello">Hi, I'm Ryan!</h1>
+    <h1 class="me" id="like">I like building prototypes and meeting new people.</h1>
     <div class="main-wrap">
         <main>
             <div class="photo-wrap">
@@ -94,7 +98,7 @@
                     </div>
             </div>
             <?php 
-                // print_names();
+                allWork();
             ?>
         </main>
     </div>

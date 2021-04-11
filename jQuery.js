@@ -1,8 +1,7 @@
 $($(document).ready(() => {
     fadeOut();
-    $(".projects").hover(handlerInAbout, handlerOutAbout)
-    // $(".interests").hover(handlerInInterests, handlerOutInterests)
-    codeBlock();
+    $(".projects").hover(handlerInProjects, handlerOutProjects) 
+    
     scroll();
     onPhotoClick();
     leftArrowClick();
@@ -10,38 +9,14 @@ $($(document).ready(() => {
     imageClick();
 }))
 
+const handlerInProjects = () => {
+        $("#p").fadeIn(1)
+        $("#p").css("display", "inline-block")
+    }
+const handlerOutProjects = () => {
+        $("#p").fadeOut(3500)  
+    }
 
-const handlerInAbout = () => {
-    let p = $(".navpa")
-    setCSS(p)
-    $("#p").fadeIn(1)
-    // $("#p").load("./stuff/abouthover.html")
-}
-const handlerOutAbout = () => {
-    let p = $(".navpa")
-    returnCSS(p)
-    $("#p").fadeOut(150)
-    // $(".abouthover").remove()
-}
-// const handlerInInterests = () => {
-//     let p = $(".navpi")
-//     setCSS(p)
-//     $("#i").fadeIn(1)
-//     // $("#i").load("./stuff/interestshover.html")
-// }
-
-// const handlerOutInterests = () => {
-//     let p = $(".navpi")
-//     returnCSS(p)
-//     $("#i").fadeOut(150)
-//     // $(".interestshover").remove()
-// }
-const setCSS = (p) => {
-    p.css("color", "rgb(153, 153, 153)")
-}
-const returnCSS = (p) => {
-    p.css("color", "#666")
-}
 const codeBlock = () => {
     setTimeout(() => { 
         $("#h3-2").fadeIn(1) 
@@ -75,6 +50,10 @@ const codeBlock = () => {
                                     $("#h3-9").fadeIn(1) 
                                     $("#h3-9").addClass("ryan9")
                                     $(".ryan8").css("border-right", ".15em solid transparent")
+                                    setTimeout(() => {
+                                        $("#h3-9").removeClass("ryan9")
+                                        $("#h3-9").addClass("ryan10")
+                                    }, 500)
                                 }, 1000)
                             }, 1500)
                         }, 1500)
@@ -88,7 +67,9 @@ const scroll = () => {
     $(window).on("scroll", () => {
         var top = $(window).scrollTop();
         console.log(top);
-        
+        if (top > 350) {
+            codeBlock();
+        }
     })
 }
 const fadeOut = () => {

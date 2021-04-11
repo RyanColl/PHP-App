@@ -34,4 +34,34 @@ function getUsers() {
     }
 }
 
+function getLicenseData() {
+    global $pdo;
+    global $license;
+    $sql = "SELECT * FROM license";
+    $result = $pdo->query($sql);
+    while ($row = $result->fetch()) {
+      array_push($license, $row);  
+  }
+} 
+  function handleContactForm() {
+    global $pdo;
+    global $name;
+    if($_SERVER["REQUEST_METHOD"] == "POST") 
+    {
+      if(isset($_POST['first_name']) && isset($_POST['last_name']) &&isset($_POST['email']) && isset($_POST['subject']) && isset($_POST['msg'])) 
+      {
+        $name = $_POST['first_name'];
+        $sql = "INSERT INTO heroku_e555971502714fb.contact (first_name, last_name, email, subject, message) VALUES (:first_name, :last_name, :email, :subject, :msg)";
+        $stmnt = $pdo->prepare($sql);
+        $stmnt->bindValue(':first_name', $_POST['first_name']);
+        $stmnt->bindValue(':last_name', $_POST['last_name']);
+        $stmnt->bindValue(':email', $_POST['email']);
+        $stmnt->bindValue(':subject', $_POST['subject']);
+        $stmnt->bindValue(':msg', $_POST['msg']);
+        $stmnt->execute();
+      }
+    }
+  }
+
+
  ?>

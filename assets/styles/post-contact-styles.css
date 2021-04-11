@@ -1,0 +1,95 @@
+.body-block {
+    display: flex;
+    justify-content: center;
+}
+.code-block {
+    margin-top: 5%;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    background: #24262A;
+    padding: 50px 0;
+    min-width: 750px;
+    max-width: 750px;
+}
+#headers-low {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #111214;
+}
+
+#headers-low > div {
+    margin: 1% 1%;
+}
+#headers-low > div > h3 {
+    color:antiquewhite;
+}
+.all-work {
+    margin: 7.5% auto;
+    color: #24262ab4;
+    text-align: center;
+}
+h3 {
+    padding-left: 1.2%;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    color: #ABB2BF;
+}
+.ryan, .ryan2, .ryan3, .ryan4, .ryan5, .ryan6, .ryan7, .ryan8, .ryan9, .ryan10, .ryan11, .ryan12, .ryan13, .ryan14, .ryan15, .ryan16, .ryan17, .ryan18, .ryan19, .ryan20, .ryan21, .ryan22, .ryan23, .ryan24 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 0.6s steps(20, end),
+      blink-caret-slow 0.75s step-end;
+  }
+.ryan25 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid transparent; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+    blink-caret-doubled 12s infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes blink-caret-slow {
+    25% { border-color: transparent }
+    50% { border-color: orange; }
+    75% { border-color: transparent }
+    100% { border-color: orange; }
+    
+  }
+  
+  /* The typewriter cursor effect */
+  
+  @keyframes blink-caret-doubled {
+    5% { border-color: transparent }
+    10% { border-color: orange; }
+    15% { border-color: transparent }
+    20% { border-color: orange; }
+    25% { border-color: transparent }
+    30% { border-color: orange; }
+    35% { border-color: transparent }
+    40% { border-color: orange; }
+    45% { border-color: transparent }
+    50% { border-color: orange; }
+    55% { border-color: transparent }
+    60% { border-color: orange; }
+    65% { border-color: transparent }
+    70% { border-color: orange; }
+    75% { border-color: transparent }
+    80% { border-color: orange; }
+    85% { border-color: transparent }
+    90% { border-color: orange; }
+    95% { border-color: transparent }
+    100% { border-color: orange; }
+  }
+ 

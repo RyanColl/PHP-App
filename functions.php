@@ -2,7 +2,10 @@
     ini_set('display_errors', 1);
     error_reporting(E_ALL);
   
-    
+    function postContactName() {
+        global $name;
+        echo $name;
+    }
     function print_names() {
         global $users;
         echo "
@@ -15,11 +18,12 @@
             }
             echo     "</ul>";
     }
-    function console_log($output, $with_script_tags = true) {
-        $js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) . ');';
-        if ($with_script_tags) {
-            $js_code = '<script>' . $js_code . '</script>';
+    function allWork() {
+        global $license;
+        foreach($license as $lis)
+        {
+            echo "<p class='all-work'>all work © $lis[full_name] $lis[year_start]-$lis[year_current] • all rights reserved</p>";
         }
-        echo $js_code;
     }
+   
 ?>

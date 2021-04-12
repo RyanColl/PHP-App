@@ -38,8 +38,8 @@
             <a href="about.php" class="about"><p class="nava">ABOUT</p></a>
             <a href="#" class="github"><p class="navpa">GITHUB
                 <div class="git-card">
-                    <div class="github-card" data-github="RyanColl" data-width="400" data-height="150" data-theme="default"></div>
-                    <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+                    <div class='github-card' data-github='RyanColl' data-width='400' data-height='317' data-theme='medium'></div>
+                    <script src='//cdn.jsdelivr.net/github-cards/latest/widget.js'></script>
                 </div>
             </p></a>
             <a href="interests.php" class="interests"><p class="navpi">INTERESTS</p></a>
@@ -89,7 +89,6 @@
                     </div>
             </div>
             <?php 
-                cards();
                 allWork();
             ?>
         </main>

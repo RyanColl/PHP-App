@@ -10,7 +10,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10%;
+  margin-bottom: 5.65%;
 }
 
 .image1 {
@@ -45,6 +45,7 @@ a {
   transition: color 0.1s;
   color: rgb(153, 153, 153);
 }
+
 ul {
     position: absolute;
     z-index: 1;
@@ -68,7 +69,7 @@ h3 {
   height: auto;
   border-radius: 5px;
   background: #24262A;
-  padding: 50px 0;
+  padding: 50px 50px;
   min-width: 750px;
 }
 #headers-low {
@@ -212,18 +213,12 @@ h3 {
   border-right: 30px solid #24262ab9;
 }
 
-.insert > div > ul {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 18px;  
-  margin-left: -11%;
+.git-card {
+  position: absolute;
+  
 }
-.insert > div > ul > a{
-  margin: 0;
-  padding: 0;
-}
-.insert > div > ul > a > li{
-  color: #24262A;
+.linkedin-card {
+  position: absolute;
 }
 .all-work {
   margin: 7.5% auto;
@@ -239,7 +234,7 @@ h3 {
   text-align: center;
 }
 #hello{
-  margin: 5% auto;
+  margin: 2.5% auto 5%;
 }
 #like {
   margin: 5% auto 7.5%;
@@ -249,7 +244,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20%;
+  margin-top: 10%;
 }
 #fs-name {
   margin-top: 10%;
@@ -340,5 +335,12 @@ form {
   flex-direction: column;
   align-items: center;
 }
-
+.cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.more-info {
+  display: none;
+}
 

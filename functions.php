@@ -20,6 +20,19 @@
     }
     function allWork() {
         global $license;
+        echo "
+            <div class='cards'>
+                <div class='github-big-card'>  
+
+                    <div class='github-card' data-github='RyanColl' data-width='400' data-height='317' data-theme='medium'></div>
+                    <script src='//cdn.jsdelivr.net/github-cards/latest/widget.js'></script>
+                
+                </div>
+                <div class='LI-profile-badge'  data-version='v1' data-size='medium' data-locale='en_US' data-type='vertical' data-theme='dark' data-vanity='rcollicutt-react-developer'>
+                    <a class='LI-simple-link' href='https://ca.linkedin.com/in/rcollicutt-react-developer?trk=profile-badge'>Ryan Collicutt</a>
+                </div>
+            </div>    
+            ";
         foreach($license as $lis)
         {
             echo "<p class='all-work'>all work © $lis[full_name] $lis[year_start]-$lis[year_current] • all rights reserved</p>";

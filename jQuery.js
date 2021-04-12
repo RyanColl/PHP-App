@@ -1,6 +1,6 @@
 $($(document).ready(() => {
     fadeOut();
-    $(".projects").hover(handlerInProjects, handlerOutProjects) 
+    $(".github").hover(hoverOnGit, hoverOutGit)
     
     scroll();
     onPhotoClick();
@@ -8,14 +8,12 @@ $($(document).ready(() => {
     rightArrowClick();
     imageClick();
 }))
-
-const handlerInProjects = () => {
-        $("#p").fadeIn(1)
-        $("#p").css("display", "inline-block")
-    }
-const handlerOutProjects = () => {
-        $("#p").fadeOut(3500)  
-    }
+const hoverOnGit = () => {
+    $(".git-card").fadeIn(1);
+}
+const hoverOutGit = () => {
+    $(".git-card").fadeOut(1);
+}
 
 const codeBlock = () => {
     setTimeout(() => { 
@@ -73,7 +71,7 @@ const scroll = () => {
     })
 }
 const fadeOut = () => {
-    $(".insert").fadeOut(1)
+    $(".git-card").fadeOut(1)
     $("#h3-2").fadeOut(1)
     $("#h3-3").fadeOut(1)
     $("#h3-4").fadeOut(1)
@@ -86,6 +84,8 @@ const fadeOut = () => {
     $(".photo3").css("opacity", "0.5")
     $(".photo4").css("opacity", "0.5")
     $(".photo5").css("opacity", "0.5")
+    setTimeout(() => {$("#ghcard-RyanColl-1").css("height", "317px")},20)
+    setTimeout(() => { $(".github-big-card iframe").css("height", 317) }, 20)
 }
 const onPhotoClick = () => {
     $("#pho a").on("click", (e) => {

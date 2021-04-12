@@ -14,9 +14,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
     <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="stylesheet" href="./assets/styles/keyframes.css">
-    <link rel="stylesheet" href="./assets/styles/contact-styles.css">
     <script src="./jQuery.js"></script>
     <title>Contact Me!</title>
 </head>
@@ -36,20 +36,10 @@
         </header>
         <nav class="navbar">
             <a href="about.php" class="about"><p class="nava">ABOUT</p></a>
-            <a href="#" class="projects"><p class="navpa">
-                PROJECTS
-                <div class="insert" id="p">
-                    <div class="projects-hover">
-                        <ul>
-                            <a href="#"><li>
-                                GitHub
-                            </li></a>
-                            <li><b class="lines">&nbsp||&nbsp</b></li>
-                            <a href="#"><li>
-                                LinkedIn
-                            </li></a>
-                        </ul>
-                    </div>
+            <a href="#" class="github"><p class="navpa">GITHUB
+                <div class="git-card">
+                    <div class="github-card" data-github="RyanColl" data-width="400" data-height="150" data-theme="default"></div>
+                    <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
                 </div>
             </p></a>
             <a href="interests.php" class="interests"><p class="navpi">INTERESTS</p></a>

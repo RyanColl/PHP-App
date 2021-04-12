@@ -35,7 +35,7 @@
                 <div><h3 id="h3-10" ><code>Implementing schemas and protocols...</code></h3></div>
                 <div><h3 id="h3-11" ><code>Connecting to workbench...</code></h3></div>
                 <div><h3 id="h3-12" ><code>Connection success! Logging in now...</code></h3></div>
-                <div><h3 id="h3-13" ><code>Welcome <b><?php postContactName(); ?></b>!</code></h3></div>
+                <div><h3 id="h3-13" ><code>Welcome <b style="color: red"><?php postContactName(); ?></b>!</code></h3></div>
                 <div><h3 id="h3-14" ><code>Now logged into MySQL workbench</code></h3></div>
                 <div><h3 id="h3-15" ><code>Connecting to database heroku_e555971502714</code></h3></div>
                 <div><h3 id="h3-16" ><code>Preparing insert statement for pdo execution...</code></h3></div>
@@ -50,7 +50,6 @@
             </div>
         </div>
     </div>
-    
     <?php 
         allWork();
     ?>

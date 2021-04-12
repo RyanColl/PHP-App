@@ -337,8 +337,11 @@ form {
 }
 .cards {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+  gap: 30px;
+  margin-top: 3%;
 }
 .more-info {
   display: none;

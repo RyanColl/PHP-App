@@ -47,6 +47,7 @@
         </nav>
     </div>
     <?php 
+        cards();
         allWork();
     ?>
 </body>

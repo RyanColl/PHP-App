@@ -29,7 +29,7 @@
                 </a>
             </div>
             <div class="image2">
-                <a href="#" class="img">
+                <a href="index.php" class="img">
                     <img src="./assets/comp3.gif">
                 </a>
             </div>

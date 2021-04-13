@@ -423,7 +423,7 @@ form {
     left: 100px;
   }
   .code-block {
-    margin: 0 0;
+    margin: -10% 0;
     transform: scale(0.5);
   }
   .photo-wrap-interests, .photo-wrap {
@@ -451,6 +451,17 @@ form {
   .navbar > a:hover > p {
     transition: font-size 0.375s;
     font-size: 1.8rem;
+  }
+  .circle__spin svg {
+    animation: spin 0.25s ease-out forwards;
+  }
+  @keyframes spin { 
+    100% { 
+      transform: rotateZ(90deg); 
+    }
+  }
+  .photo-wrap-interests {
+    margin: -20% 0;
   }
 }
 

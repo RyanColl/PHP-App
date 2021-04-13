@@ -1,7 +1,7 @@
 $($(document).ready(() => {
     fadeOut();
     $(".github").hover(hoverOnGit, hoverOutGit)
-    
+    preventDef();
     scroll();
     onPhotoClick();
     leftArrowClick();
@@ -20,6 +20,14 @@ const getWidth = () => {
     if (width < 600) {
         $("#ghcard-RyanColl-1").css("width", width)
     }
+}
+const preventDef = () => {
+    $(".img").on("click", (e) => {
+        e.preventDefault();
+    })
+    $(".github").on("click", (e) => {
+        e.preventDefault();
+    })
 }
 const codeBlock = () => {
     setTimeout(() => { 

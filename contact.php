@@ -21,7 +21,7 @@
     <title>Contact Me!</title>
 </head>
 <body>
-<div class="header-wrap">
+    <div class="header-wrap">
         <header>
             <div class="image1">
                 <a href="#" class="img">

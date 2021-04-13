@@ -2,8 +2,6 @@ $($(document).ready(() => {
     fadeOut();
     $(".github").hover(hoverOnGit, hoverOutGit)
     preventDef();
-    body();
-    clickNav();
     scroll();
     onPhotoClick();
     leftArrowClick();
@@ -17,39 +15,12 @@ const hoverOnGit = () => {
 const hoverOutGit = () => {
     $(".git-card").fadeOut(1);
 }
-const getWidth = () => {
-    let width = $("body").width()
-    if (width < 600) {
-        $("#ghcard-RyanColl-1").css("max-width", width)
-    }
-}
 const preventDef = () => {
     $(".img").on("click", (e) => {
         e.preventDefault();
     })
     $(".github").on("click", (e) => {
         e.preventDefault();
-    })
-}
-const body = () => {
-    let width = $("body").width()
-    setTimeout(() => {
-        $("body").css("width", width)
-    }, 10)
-}
-const clickNav = () => {
-
-    $(".about").on("click", () => {
-
-    })
-    $(".github").on("click", () => {
-
-    })
-    $(".interests").on("click", () => {
-
-    })
-    $(".contact").on("click", () => {
-
     })
 }
 const codeBlock = () => {

@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&family=Merriweather:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+body {
+  overflow: hidden auto;
+}
 a {
   text-decoration: none;
 }
@@ -346,7 +349,7 @@ form {
 .more-info {
   display: none;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   
   .navbar {
     width: 350px;
@@ -463,5 +466,6 @@ form {
   .photo-wrap-interests {
     margin: -20% 0;
   }
+
 }
 

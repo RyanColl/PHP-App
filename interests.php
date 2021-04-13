@@ -105,7 +105,7 @@
     </div>
                     
     <?php 
-        footer();
+        // footer();
         allWork();
     ?>
 </body>

@@ -29,10 +29,6 @@ const preventDef = () => {
         e.preventDefault();
     })
 }
-for (let i = 0; i < 25; i++) {
-    $(`#headers-low:nth of type(${i})`)
-}
-
 const codeBlock = () => {
     setTimeout(() => { 
         $("#h3-2").fadeIn(1) 

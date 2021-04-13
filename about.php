@@ -61,7 +61,7 @@
         <div class="about-bio">
             <h1>About Ryan</h1>
             <p>
-                I don’t fit into most boxes. I’m both creative and tech-minded, but have one of the most people-focused attitudes you've ever seen. Thats what makes me a Full Stack Developer, not a programmer.
+                I don’t fit into most boxes. I’m both creative and tech-minded, but have one of the most people-focused attitudes you've ever seen. Thats what makes me a Full Stack Developer, not a just programmer.
                 As an inspirationist, I love helping others grow and do their best work. On top of my 9-5, I am a full-time boyfriend, gamer, and cook. Much of my inspiration comes from my life experience; I
                 tend to cover topics about habit building, community balance, personal development, and share the things I think would be helpful to others.  Beyond that, I’m probably spending time with family 
                 and friends, driving, listening to podcasts, or tinkering on my next side project. 

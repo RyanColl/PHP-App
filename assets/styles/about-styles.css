@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&family=Merriweather:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+.main-wrap-about {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+.about-image {
+    width:90%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-me {
+    width: 100%;
+    max-width: 475px;
+}
+.about-bio {
+    margin-top: 5%;
+    width: 60%;
+}
+.about-bio > h1 {
+    font-family: 'Nunito', sans-serif;
+    color: #24262A;
+}
+.about-bio > p {
+    font-size: 1.3rem;
+    line-height: 135%;
+    font-family: 'Nunito', serif;
+    color: #36393f;
+}
+@media only screen and (max-width: 600px) {
+    .about-bio > p {
+        transition: font-size 0.25s;
+        font-size: 0.9rem;;   
+    }
+}

@@ -5,9 +5,7 @@
 html, body {
   overflow-x: hidden;
 }
-body {
-  position: relative
-}
+
 
 a {
   text-decoration: none;
@@ -33,6 +31,7 @@ a {
     justify-content: center;
 }
 .img {
+    z-index: 1;
     display: flex;
     justify-content: center;
 }
@@ -314,6 +313,7 @@ h3 {
   font-size: 1.5rem;
   resize: vertical;
   min-height: 60px;
+  max-height: 600px;
 }
 #submit {
     display: inline-block;
@@ -472,4 +472,11 @@ form {
   }
 
 }
+.main-wrap-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-image {
 
+}

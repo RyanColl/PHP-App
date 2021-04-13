@@ -24,7 +24,7 @@
     <div class="header-wrap">
         <header>
             <div class="image1">
-                <a href="#" class="img">
+                <a href="index.php" class="img">
                     <img src="./assets/fswdrcl.png">
                 </a>
             </div>
@@ -89,6 +89,7 @@
         </form>
     </div>
     <?php 
+        // footer();
         allWork();
     ?>
 </body>

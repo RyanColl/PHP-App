@@ -18,6 +18,15 @@
             }
             echo     "</ul>";
     }
+    function linkedIn_card() { // destroys layout for pages
+        echo " 
+            <div class='link-card'>
+                <div class='LI-profile-badge'  data-version='v1' data-size='large' data-locale='en_US' data-type='vertical' data-theme='dark' data-vanity='rcollicutt-react-developer'>
+                    <a class='LI-simple-link' href='https://ca.linkedin.com/in/rcollicutt-react-developer?trk=profile-badge'>Ryan Collicutt</a>
+                </div>
+            </div>
+        ";
+    }
     function cards() {
         echo "
         <div class='cards'>
@@ -39,6 +48,14 @@
         {
             echo "<p class='all-work'>all work © $lis[full_name] $lis[year_start]-$lis[year_current] • all rights reserved</p>";
         }
+    }
+    function footer() {
+
+        echo "
+            <div class='div-download'>
+                <a class='download' href='./assets/docs/Ryan_Collicutt_Resume.pdf' download='./assets/docs/Ryan_Collicutt_Resume.pdf'>Resume</a>
+            </div>
+        ";
     }
    
 ?>

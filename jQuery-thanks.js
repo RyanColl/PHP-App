@@ -4,5 +4,5 @@ $(document).ready(() => {
 const redirect = () => {
     setTimeout(() => {
         window.location.replace("index.php")
-    }, 2000)
+    }, 3000)
 }

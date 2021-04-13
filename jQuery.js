@@ -15,6 +15,12 @@ const hoverOnGit = () => {
 const hoverOutGit = () => {
     $(".git-card").fadeOut(1);
 }
+const getWidth = () => {
+    let width = $("body").width()
+    if (width < 500) {
+        $("#ghcard-RyanColl-1").css("max-width", width)
+    }
+}
 const preventDef = () => {
     $(".img").on("click", (e) => {
         e.preventDefault();
@@ -23,6 +29,10 @@ const preventDef = () => {
         e.preventDefault();
     })
 }
+for (let i = 0; i < 25; i++) {
+    $(`#headers-low:nth of type(${i})`)
+}
+
 const codeBlock = () => {
     setTimeout(() => { 
         $("#h3-2").fadeIn(1) 

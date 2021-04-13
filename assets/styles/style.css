@@ -2,9 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&family=Merriweather:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-body {
-  overflow: hidden auto;
+html, body {
+  overflow-x: hidden;
 }
+body {
+  position: relative
+}
+
 a {
   text-decoration: none;
 }

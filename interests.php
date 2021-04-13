@@ -35,14 +35,21 @@
             </div>
         </header>
         <nav class="navbar">
+            <div class="circle-dashed" display="none">
+                <div class="circle__spin">
+                    <svg display="none">
+                        <circle cx="50%" cy="50%" r="67px"></circle>
+                    </svg>
+                </div>
+            </div>
             <a href="about.php" class="about"><p class="nava">ABOUT</p></a>
-            <a href="#" class="github"><p class="navpa">GITHUB
+            <a href="#" class="github"><p class="navpa" >GITHUB
                 <div class="git-card">
                     <div class='github-card' data-github='RyanColl' data-width='400' data-height='317' data-theme='medium'></div>
                     <script src='//cdn.jsdelivr.net/github-cards/latest/widget.js'></script>
                 </div>
             </p></a>
-            <a href="interests.php" class="interests"><p class="navpi">INTERESTS</p></a>
+            <a href="interests.php" class="interests"><p class="navpi" style="color: rgb(153, 153, 153)">INTERESTS</p></a>
             <a href="contact.php" class="contact"><p class="navc">CONTACT</p></a>
         </nav>
     </div>

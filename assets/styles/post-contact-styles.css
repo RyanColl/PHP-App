@@ -2,6 +2,11 @@
     display: flex;
     justify-content: center;
 }
+@media only screen and (max-width: 600px) {
+    .code-block {
+        transform: scale(0.5)
+    }
+}
 .code-block {
     margin-top: 5%;
     width: auto;

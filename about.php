@@ -21,7 +21,7 @@
     <script src="./jQuery.js"></script>
   </head>
 <body>
-    <div class="header-wrap">
+<div class="header-wrap">
         <header>
             <div class="image1">
                 <a href="#" class="img">
@@ -35,7 +35,14 @@
             </div>
         </header>
         <nav class="navbar">
-            <a href="about.php" class="about"><p class="nava">ABOUT</p></a>
+            <div class="circle-dashed" display="none">
+                <div class="circle__spin">
+                    <svg display="none">
+                        <circle cx="50%" cy="50%" r="67px"></circle>
+                    </svg>
+                </div>
+            </div>
+            <a href="about.php" class="about"><p class="nava" style="color: rgb(153, 153, 153)">ABOUT</p></a>
             <a href="#" class="github"><p class="navpa">GITHUB
                 <div class="git-card">
                     <div class='github-card' data-github='RyanColl' data-width='400' data-height='317' data-theme='medium'></div>

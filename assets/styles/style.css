@@ -215,7 +215,7 @@ h3 {
 
 .git-card {
   position: absolute;
-  
+  margin-left: -10%;
 }
 .linkedin-card {
   position: absolute;
@@ -345,5 +345,112 @@ form {
 }
 .more-info {
   display: none;
+}
+@media only screen and (max-width: 600px) {
+  
+  .navbar {
+    width: 350px;
+    height: 350px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .about {
+    padding: 25px 25px 0 0;
+    z-index: 1;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    justify-self: center;
+    align-self: center;
+  }
+  .github {
+    padding: 0 0 15px 75px;
+    z-index: 1;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+  }
+  .interests {
+    padding: 15px 35px 0 0;
+    z-index: 1;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+  }
+  .contact {
+    padding-bottom: 25px;
+    z-index: 1;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    justify-self: flex-end;
+    align-self: center;
+  }
+  .circle-dashed {
+    
+    grid-column: 1/3;
+    grid-row: 1/3;
+    justify-self: center;
+    align-self: center;
+    position: relative;
+    margin: 20px;
+    height: 240px;
+    width: 240px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  .circle__spin {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    width: 260px;
+    height: 260px;
+  }
+  .circle__spin svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .circle__spin circle {
+    stroke-width: 6; /* control the dashes width */
+    stroke-dasharray: 80, 25; /* control the dashes spacing */
+    fill: none;
+    stroke: #24262A;
+  }
+  .git-card {
+    margin-left: -22%;
+    left: 100px;
+  }
+  .code-block {
+    margin: 0 0;
+    transform: scale(0.5);
+  }
+  .photo-wrap-interests, .photo-wrap {
+    transform: scale(0.5);
+  }
+  .me {
+    transform: scale(0.75);
+  }
+  .main-wrap {
+    margin: -5% auto;
+  }
+  #like {
+    line-height: 140%;
+    margin: 0 auto
+  }
+  .img > img {
+    transform: scale(0.55);
+  }
+  .image1 {
+    margin: 0 0 -25%;
+  }
+  .image2 {
+    margin: -15% 0;
+  }
+  .navbar > a:hover > p {
+    transition: font-size 0.375s;
+    font-size: 1.8rem;
+  }
 }
 

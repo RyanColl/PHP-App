@@ -9,12 +9,18 @@ $($(document).ready(() => {
     imageClick();
 }))
 const hoverOnGit = () => {
+    getWidth();
     $(".git-card").fadeIn(1);
 }
 const hoverOutGit = () => {
     $(".git-card").fadeOut(1);
 }
-
+const getWidth = () => {
+    let width = $("body").width()
+    if (width < 600) {
+        $("#ghcard-RyanColl-1").css("width", width)
+    }
+}
 const codeBlock = () => {
     setTimeout(() => { 
         $("#h3-2").fadeIn(1) 

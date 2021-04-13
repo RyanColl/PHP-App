@@ -21,7 +21,7 @@
     <title>Contact Me!</title>
 </head>
 <body>
-    <div class="header-wrap">
+<div class="header-wrap">
         <header>
             <div class="image1">
                 <a href="#" class="img">
@@ -35,6 +35,13 @@
             </div>
         </header>
         <nav class="navbar">
+            <div class="circle-dashed" display="none">
+                <div class="circle__spin">
+                    <svg display="none">
+                        <circle cx="50%" cy="50%" r="67px"></circle>
+                    </svg>
+                </div>
+            </div>
             <a href="about.php" class="about"><p class="nava">ABOUT</p></a>
             <a href="#" class="github"><p class="navpa">GITHUB
                 <div class="git-card">
@@ -43,7 +50,7 @@
                 </div>
             </p></a>
             <a href="interests.php" class="interests"><p class="navpi">INTERESTS</p></a>
-            <a href="contact.php" class="contact"><p class="navc">CONTACT</p></a>
+            <a href="contact.php" class="contact"><p class="navc" style="color: rgb(153, 153, 153)">CONTACT</p></a>
         </nav>
     </div>
     <div class="body-wrap-contact">

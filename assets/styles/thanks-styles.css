@@ -8,3 +8,9 @@ h1 {
     text-align: center;
     font-size: 2.5rem;
 }
+@media only screen and (max-width: 600px) {
+    img {
+        transform: scale(0.75)
+    }
+}
+

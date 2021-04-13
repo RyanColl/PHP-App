@@ -35,6 +35,13 @@
             </div>
         </header>
         <nav class="navbar">
+            <div class="circle-dashed" display="none">
+                <div class="circle__spin">
+                    <svg display="none">
+                        <circle cx="50%" cy="50%" r="67px"></circle>
+                    </svg>
+                </div>
+            </div>
             <a href="about.php" class="about"><p class="nava">ABOUT</p></a>
             <a href="#" class="github"><p class="navpa">GITHUB
                 <div class="git-card">

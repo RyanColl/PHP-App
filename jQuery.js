@@ -20,7 +20,7 @@ const hoverOutGit = () => {
 const getWidth = () => {
     let width = $("body").width()
     if (width < 600) {
-        $("#ghcard-RyanColl-1").css("width", width)
+        $("#ghcard-RyanColl-1").css("max-width", width)
     }
 }
 const preventDef = () => {

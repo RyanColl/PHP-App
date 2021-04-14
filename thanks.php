@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="body-wrap">
-        <h1>Thanks for reaching out to me!<br> I will get back to you as soon as I can!</h1>
+        <h1>Thanks for reaching out to me!<br> I will get back to you as soon as I can.</h1>
         <img src="./assets/my-pics/loading.gif" alt="" class="loading-gif">
     </div>
     

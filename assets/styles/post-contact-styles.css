@@ -62,7 +62,7 @@ h3 {
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
-    blink-caret-slow 12s infinite;
+    blink-caret-slow 12s step-end;
 }
 @keyframes typing {
     from { width: 0 }
